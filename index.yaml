@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  kubewarden-controller:
+  - annotations:
+      catalog.cattle.io/auto-install: kubewarden-crds=match
+      catalog.cattle.io/certified: kubewarden
+      catalog.cattle.io/display-name: Kubewarden
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.22.0-0'
+      catalog.cattle.io/namespace: kubewarden
+      catalog.cattle.io/rancher-version: '>= 2.6.0-0 < 2.7.0-0'
+      catalog.cattle.io/release-name: kubewarden
+      catalog.cattle.io/requests-cpu: 4500m
+      catalog.cattle.io/requests-memory: 4000Mi
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: kubewarden
+    apiVersion: v2
+    appVersion: v1.1.0
+    created: "2022-07-19T15:09:55.496360742Z"
+    description: A Helm chart for deploying the Kubewarden stack
+    digest: bce2c8fdf3c7637413045f319b2ed24b525e3dec600988a2eaf318a47e2470bf
+    home: https://www.kubewarden.io/
+    icon: https://www.kubewarden.io/images/icon-kubewarden.svg
+    maintainers:
+    - email: fcastelli@suse.com
+      name: Flavio Castelli
+    - email: rfernandezlopez@suse.com
+      name: Rafael Fernández López
+    name: kubewarden-controller
+    type: application
+    urls:
+    - https://github.com/JohnsonFullbright/chart-things/releases/download/kubewarden-controller-1.1.0/kubewarden-controller-1.1.0.tgz
+    version: 1.1.0
+generated: "2022-07-19T15:09:55.496367342Z"
