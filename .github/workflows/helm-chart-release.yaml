@@ -79,7 +79,7 @@ jobs:
             echo "$chart_directory does not exist. Assuming no charts update"
             exit 0
           fi
-          REGISTRY="ghcr.io/${{ GITHUB_REPOSITORY_OWNER }}"
+          REGISTRY="ghcr.io/$GITHUB_REPOSITORY_OWNER"
           charts=$(find $chart_directory -maxdepth 1 -mindepth 1 -type f)
           for chart in $charts; do
             chart_name=$(helm show chart $chart | yq '.name' | sed 's/"//g')
