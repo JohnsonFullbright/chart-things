@@ -1,0 +1,5 @@
+common:
+  policyServer:
+    default:
+      name: default
+      enabled: true
