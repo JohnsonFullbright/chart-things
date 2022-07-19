@@ -4,9 +4,6 @@ on:
   push:
     branches:
     - main
-    
-env:
-  REGISTRY: ghcr.io/${{ github.repository }}
 
 jobs:
   release:
@@ -94,3 +91,5 @@ jobs:
           done
         env:
           COSIGN_EXPERIMENTAL: 1
+          ACTIONS_STEP_DEBUG: true
+          REGISTRY: ghcr.io/${{ github.repository }}
